@@ -1,0 +1,16 @@
+{
+  "name": "Aaron",
+  "last_name": "Swartz",
+  "courses": ["java", "python", "c", "javascript"],
+  "address": {
+    "street": "4 main street",
+    "city": "Boston"
+  },
+  "contacts": [
+    {
+      "name": "Brad",
+      "relationship": "Friend",
+      "phone": 94654646546
+    }
+  ]
+}
