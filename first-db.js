@@ -31,6 +31,7 @@ db.customers.insert(
 )
 
 db.customers.find();
+db.customers.find({firstName: 'Joe'}, {firstName: true, lastName:false});
 
 // replace or update data
 db.customers.update(
@@ -89,14 +90,17 @@ db.customers.update(
 db.customers.remove({firstName: "Isaac"})
 db.customers.remove({firstName: "Isaac"}, {justOne: true})
 
-db.customers.find({firstName: "Elena"})
+db.customers.find({firstName: "Elena"});
 db.customers.find({$or: [{firstName: "Elena"}, {firstName: "Isaac"}]})
 db.customers.fid({gender: "male"})
 
 db.customers.find({age: {$lt: 40}})
 db.customers.find({age: {$gt: 40}})
+db.customers.find({age: {$gt: 30, $lt: 90}});
 
 db.customers.find({"address.city": "Boston"})
+
+db.customers.find({name: {$regex: 'ston'}});
 
 // sorting
 db.customers.find().sort({lastName: 1});
