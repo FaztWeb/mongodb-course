@@ -1,5 +1,8 @@
-// is a group of documents
-// is equivalend of a table in SQL
+// create a collection
+db.createCollection('articles');
+
+// to delete a collection
+db.articles.drop();
 
 // have DYNAMIC SQUEMAS
 // means the documents can be different inside of a collection

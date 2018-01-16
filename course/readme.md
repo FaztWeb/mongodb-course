@@ -2,3 +2,4 @@
 - document/
 - collections/
 - shell/
+- crud/
