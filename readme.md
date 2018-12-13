@@ -14,4 +14,3 @@
 - to create a database: `use exampledatabase`
 
 - how to create a user: `db.createUser({})`
-- how to login with my user: `use database`, `db.auth("user","psw")`
